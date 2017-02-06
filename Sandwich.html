@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<title>jQuery BeforeAfter Plugin Demo for Sandwich Town Neck Beach</title>
+<style type="text/css">
+#container {
+	margin-left:auto;
+	margin-right:auto;
+}
+#content {
+	margin:0 auto;
+	width:755px;
+}
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./jquery/beforeafter/js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="./jquery/beforeafter/js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="./jquery/beforeafter/js/jquery.beforeafter-1.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#container0').beforeAfter({
+		animateIntro:true,
+		imagePath:'./jquery/beforeafter/js/',
+		introDuration : 600,
+		introPosition : .20,
+		showFullLinks : true,
+		beforeLinkText: 'Show January image',
+		afterLinkText: 'Show February image',
+		cursor: 'e-resize',
+		enableKeyboard: true,
+		dividerColor: '#070'
+	});
+
+});
+</script>
+</head>
+<body>
+<div id="content">
+	<h1>Northwest end of Sandwich Town Neck Beach</h1>	
+	    <div id="intro">
+			<p>These images are orthophoto mosiacs made from unmanned aerial systems flown on January 22, 2016 (immediately after the
+			beach nourishment program was completed) and February 11, 2016 (after two moderate nor'easters).			</p>
+            <p>The jQuery BeforeAfter plugin allows you to take two images and merge them so 
+that a visitor can drag a slider over them to visually compare them.</p>
+		</div>
+
+		<p>Grab and drag the handle to compare images.</p>
+		<div id="container0">
+            <div><img alt="before" src="./images/Sandwich_2016-01-22.jpg" width="960" height="476" /></div>
+            <div><img alt="after" src="./images/Sandwich_2016-02-11.jpg" width="960" height="476" /></div>
+		</div>	
+
+</div>
+<hr>
+<p>
+<div id="footer">
+<h4> Acknowledgements</h4>
+<p>Thanks to the Town of Sandwich for supporting our research at Town Neck Beach.</p>
+<p>
+Thanks to the jQuery beforeAfter plugin: <a href="http://www.catchmyfame.com/2009/06/25/jquery-beforeafter-plugin/">www.catchmyfame.com/2009/06/25/jquery-beforeafter-plugin/
+</p>
+</a>
+
+</div>
+
+</body>
+</html>
