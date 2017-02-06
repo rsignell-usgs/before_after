@@ -21,7 +21,31 @@
 <script type="text/javascript" src="./jquery/beforeafter/js/jquery.beforeafter-1.4.min.js"></script>
 <script type="text/javascript">
 $(function(){
-	$('#container').beforeAfter({
+	$('#container0').beforeAfter({
+		animateIntro:true,
+		imagePath:'./jquery/beforeafter/js/',
+		introDuration : 600,
+		introPosition : .25,
+		showFullLinks : true,
+		beforeLinkText: 'Show before image',
+		afterLinkText: 'Show after image',
+		cursor: 'e-resize',
+		enableKeyboard: true,
+		dividerColor: '#070'
+	});
+		$('#container1').beforeAfter({
+		animateIntro:true,
+		imagePath:'./jquery/beforeafter/js/',
+		introDuration : 600,
+		introPosition : .25,
+		showFullLinks : true,
+		beforeLinkText: 'Show before image',
+		afterLinkText: 'Show after image',
+		cursor: 'e-resize',
+		enableKeyboard: true,
+		dividerColor: '#070'
+	});
+		$('#container2').beforeAfter({
 		animateIntro:true,
 		imagePath:'./jquery/beforeafter/js/',
 		introDuration : 600,
